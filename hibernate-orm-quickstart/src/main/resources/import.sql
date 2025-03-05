@@ -1,4 +1,22 @@
 INSERT INTO known_fruits(id, name) VALUES (1, 'Cherry');
 INSERT INTO known_fruits(id, name) VALUES (2, 'Apple');
 INSERT INTO known_fruits(id, name) VALUES (3, 'Banana');
-ALTER SEQUENCE known_fruits_id_seq RESTART WITH 4;
+INSERT INTO known_fruits(id, name) VALUES (4, 'Banana');
+INSERT INTO known_fruits(id, name) VALUES (5, 'Banana');
+INSERT INTO known_fruits(id, name) VALUES (6, 'Banana');
+INSERT INTO known_fruits(id, name) VALUES (7, 'Banana');
+INSERT INTO known_fruits(id, name) VALUES (8, 'Banana');
+INSERT INTO known_fruits(id, name) VALUES (9, 'Banana');
+INSERT INTO known_fruits(id, name) VALUES (10, 'Banana');
+INSERT INTO known_fruits(id, name) VALUES (11, 'Banana');
+INSERT INTO known_fruits(id, name) VALUES (12, 'Banana');
+INSERT INTO known_fruits(id, name) VALUES (13, 'Banana');
+INSERT INTO known_fruits(id, name) VALUES (14, 'Banana');
+INSERT INTO known_fruits(id, name) VALUES (15, 'Banana');
+INSERT INTO known_fruits(id, name) VALUES (16, 'Banana');
+INSERT INTO known_fruits(id, name) VALUES (17, 'Banana');
+ALTER SEQUENCE known_fruits_id_seq RESTART WITH 18;
+
+INSERT INTO animals(id, name) VALUES (1, 'Cat');
+INSERT INTO animals(id, name) VALUES (2, 'Dog');
+INSERT INTO animals(id, name) VALUES (3, 'Fish');
