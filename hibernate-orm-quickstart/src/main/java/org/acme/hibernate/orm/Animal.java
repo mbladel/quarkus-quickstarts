@@ -3,6 +3,8 @@ package org.acme.hibernate.orm;
 import jakarta.persistence.Cacheable;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import jakarta.persistence.NamedQuery;
@@ -16,13 +18,14 @@ public class Animal {
     @Id
     private Integer id;
 
+    @Enumerated(EnumType.STRING)
+    private Animal.Type type;
+
+    private Integer age;
+
     private String name;
 
     public Animal() {
-    }
-
-    public Animal(String name) {
-        this.name = name;
     }
 
     public Integer getId() {
@@ -33,6 +36,22 @@ public class Animal {
         this.id = id;
     }
 
+    public Animal.Type getType() {
+        return type;
+    }
+
+    public void setType(Animal.Type type) {
+        this.type = type;
+    }
+
+    public Integer getAge() {
+        return age;
+    }
+
+    public void setAge(Integer age) {
+        this.age = age;
+    }
+
     public String getName() {
         return name;
     }
@@ -41,4 +60,9 @@ public class Animal {
         this.name = name;
     }
 
+    public enum Type {
+        CAT,
+        DOG,
+        FISH,
+    }
 }
