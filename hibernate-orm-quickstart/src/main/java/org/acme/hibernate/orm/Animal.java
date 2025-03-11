@@ -7,6 +7,7 @@ import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.NamedQuery;
 import jakarta.persistence.QueryHint;
 import jakarta.persistence.SequenceGenerator;
@@ -24,6 +25,9 @@ public class Animal {
     private Integer age;
 
     private String name;
+
+    @ManyToOne
+    private Fruit fruit;
 
     public Animal() {
     }
@@ -58,6 +62,14 @@ public class Animal {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public Fruit getFruit() {
+        return fruit;
+    }
+
+    public void setFruit(Fruit fruit) {
+        this.fruit = fruit;
     }
 
     public enum Type {

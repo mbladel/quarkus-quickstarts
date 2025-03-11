@@ -20,6 +20,6 @@ INSERT INTO known_fruits(id, name) VALUES (19, 'Apricot');
 INSERT INTO known_fruits(id, name) VALUES (20, 'Nectarine');
 ALTER SEQUENCE known_fruits_id_seq RESTART WITH 21;
 
-INSERT INTO animals(id, type, age, name) VALUES (1, 'CAT', 3, 'Felix');
-INSERT INTO animals(id, type, age, name) VALUES (2, 'DOG', 5, 'Stella');
-INSERT INTO animals(id, type, age, name) VALUES (3, 'FISH', 1, 'Red');
+INSERT INTO animals(id, type, age, name, fruit_id) VALUES (1, 'CAT', 3, 'Felix', 1);
+INSERT INTO animals(id, type, age, name, fruit_id) VALUES (2, 'DOG', 5, 'Stella', 2);
+INSERT INTO animals(id, type, age, name, fruit_id) VALUES (3, 'FISH', 1, 'Red', 4);
